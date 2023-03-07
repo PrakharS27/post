@@ -9,8 +9,6 @@ const Posts = () => {
     const fetchData = async () => {
       const response = await fetch("https://dummyjson.com/posts");
       const data = await response.json();
-console.log(data.posts)
-console.log(data)
       setPosts(data.posts);
     };
     fetchData();
